@@ -4,7 +4,8 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(45deg, #469E75, #3D624D);
+    background: linear-gradient(45deg, #92bd9b, #447258);
+    font-family: 'poppins', sans-serif;
 }
 
 .container{
@@ -39,6 +40,11 @@ body{
     box-shadow: 0 10px 10px rgba(0,0,0,0.2);
     border-radius: 10px;
 }
+.container .card:hover .box{
+    transform: translateY(-80px);
+    background: linear-gradient(45deg, hsla(213, 77%, 14%, 1) 0%, hsla(202, 27%, 45%, 1) 100%);
+    box-shadow: 0 30px 20px rgba(0,0,0,0.5);
+}
 .container .card .box .content{
     text-align: center;
     padding: 15px;
@@ -53,14 +59,28 @@ body{
 }
 .container .card:hover .box .content h3{
     color: rgba(0,0,0,0.2);
-    top: -200px;
+    top: -180px;
 }
 .container .card .box .content h2{
     color: aliceblue;
-    font-weight: 400;
 }
 .container .card:hover .box .content h2,
 .container .card:hover .box .content p{
     color: white;
-    transition: 1s;
+    transition: 0.5s;
+    z-index: 1;
+}
+.container .card .box .content a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    margin-top: 20px;
+    font-weight: 600;
+    background: linear-gradient(45deg, #E43C2F,#FFA03A );
+    padding: 15px 20px;
+    border-radius: 10px ;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+}
+.container .card .box .content a:hover{
+    background: linear-gradient(45deg, #459C74,#3D644E);
 }
