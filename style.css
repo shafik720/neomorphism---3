@@ -35,10 +35,32 @@ body{
     justify-content: center;
     align-items: center;    
     overflow: hidden;
+    transition: 0.3s;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.2);
+    border-radius: 10px;
 }
 .container .card .box .content{
     text-align: center;
+    padding: 15px;
 }
 .container .card .box .content h3{
-    font-size: 8em;
+    font-size: 10em;
+    position: absolute;
+    top: -160px;
+    right: 10px;
+    color: rgba(0,0,0,0.07);
+    transition: 0.5s;
+}
+.container .card:hover .box .content h3{
+    color: rgba(0,0,0,0.2);
+    top: -200px;
+}
+.container .card .box .content h2{
+    color: aliceblue;
+    font-weight: 400;
+}
+.container .card:hover .box .content h2,
+.container .card:hover .box .content p{
+    color: white;
+    transition: 1s;
 }
